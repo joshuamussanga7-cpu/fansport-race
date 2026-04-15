@@ -139,11 +139,11 @@
 
         @media (min-width: 1024px) {
             .hero-container {
-                flex-direction: row;
-                align-items: flex-start;
-                justify-content: space-between;
-                min-height: 800px;
-                padding-top: 40px;
+                flex-direction: column; /* Changed to stack vertically */
+                align-items: center;
+                justify-content: flex-start;
+                min-height: auto;
+                padding-top: 60px;
             }
         }
 
@@ -158,11 +158,11 @@
 
         @media (min-width: 1024px) {
             .hero-text-side {
-                width: 50%;
-                align-items: flex-start;
-                text-align: left;
-                padding-top: 100px; /* Aligned with girl's shoulder level */
-                padding-left: 2%;
+                width: 100%;
+                align-items: center;
+                text-align: center;
+                padding-top: 40px; /* Spacing below the girl image */
+                padding-left: 0;
             }
         }
 
@@ -180,37 +180,37 @@
 
         @media (min-width: 1024px) {
             .hero-image-side {
-                position: absolute;
-                right: -60px; /* Moved further right (approx 1.5cm) */
+                position: relative;
+                right: 0;
                 top: 0;
-                width: 60%;
-                height: 100%;
+                width: 100%;
+                max-width: 800px;
+                height: auto;
                 margin-top: 0;
-                align-items: flex-start;
-                justify-content: flex-end;
+                align-items: center;
+                justify-content: center;
                 z-index: 20;
             }
         }
 
         .girl-img {
-            max-width: none;
-            width: 150%; /* Maximize to fit sides */
+            max-width: 100%;
             height: auto;
             object-fit: contain;
             object-position: center;
-            transform: scale(1.3); /* Initial zoom for mobile */
+            transform: scale(1.0); /* Reduced zoom by 0.3 (from 1.3) */
         }
 
         @media (min-width: 1024px) {
             .girl-img {
-                max-width: none;
-                width: 160%; /* Break container limits */
+                max-width: 100%;
+                width: auto;
                 height: auto;
-                max-height: none;
-                object-position: top right;
-                margin-top: 100px; /* Moved up from 180px */
-                transform: scale(2.0); /* Maximized by 2 times */
-                transform-origin: center right;
+                max-height: 600px;
+                object-position: center;
+                margin-top: 0;
+                transform: scale(1.7); /* Reduced zoom by 0.3 (from 2.0) */
+                transform-origin: center center;
             }
         }
 
@@ -301,7 +301,7 @@
             </div>
 
             <!-- JOIN & RULES -->
-            <div class="flex flex-col items-center lg:ml-12">
+            <div class="flex flex-col items-center">
                 <a href="https://fanpartners.bet" target="_blank" class="join-btn text-black text-3xl lg:text-4xl font-black py-4 px-12 lg:px-16 rounded-full italic tracking-tighter shadow-xl inline-block text-center transform hover:scale-105 transition-transform">
                     JOIN
                 </a>
