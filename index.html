@@ -243,7 +243,7 @@
     <canvas id="particleCanvas"></canvas>
 
     <!-- TOP NAVIGATION -->
-    <div class="fixed top-0 left-0 right-0 p-4 lg:p-8 flex justify-between items-start pointer-events-none z-[150] w-full">
+    <div class="absolute top-0 left-0 right-0 p-4 lg:p-8 flex justify-between items-start pointer-events-none z-[150] w-full">
         <div class="bg-neon-green p-1 rounded-xl shadow-lg overflow-hidden pointer-events-auto">
             <img src="images/logo.png" class="h-10 lg:h-16 w-auto block object-contain" alt="FanSport Logo">
         </div>
@@ -259,11 +259,11 @@
         </div>
 
         <!-- 2. JOIN & RULES Buttons (Right after girl) -->
-        <div class="flex flex-col items-center mt-4 lg:mt-8 gap-6 z-30">
-            <a href="https://fanpartners.bet" target="_blank" class="join-btn text-black text-4xl lg:text-5xl font-black py-5 px-16 lg:px-24 rounded-full italic tracking-tighter shadow-2xl inline-block text-center transform hover:scale-105 transition-transform">
+        <div class="flex flex-col items-center mt-6 lg:mt-12 gap-10 lg:gap-14 z-30">
+            <a href="https://fanpartners.bet" target="_blank" class="join-btn text-black text-5xl lg:text-7xl font-black py-6 px-20 lg:px-32 rounded-full italic tracking-tighter shadow-2xl inline-block text-center transform hover:scale-110 transition-transform">
                 JOIN
             </a>
-            <button onclick="toggleModal(true)" class="text-white font-black tracking-widest hover:underline italic text-xl lg:text-3xl uppercase">RULES</button>
+            <button onclick="toggleModal(true)" class="text-white font-black tracking-widest hover:underline italic text-2xl lg:text-4xl uppercase">RULES</button>
         </div>
 
         <!-- Content Stack -->
@@ -280,34 +280,34 @@
             </div>
 
             <!-- 5. Steps (Login, Attract, Each FTD) -->
-            <div class="flex flex-row flex-wrap justify-center items-end gap-8 lg:gap-16 mb-20">
+            <div class="flex flex-row flex-wrap justify-center items-end gap-10 lg:gap-20 mb-20">
                 <div class="flex flex-col items-center">
-                    <div class="mb-5">
-                        <img src="https://img.icons8.com/ios-filled/100/00FF00/smartphone.png" class="w-16 h-16 lg:w-28 lg:h-28">
+                    <div class="mb-6">
+                        <img src="https://img.icons8.com/ios-filled/100/00FF00/smartphone.png" class="w-20 h-20 lg:w-40 lg:h-40">
                     </div>
-                    <p class="text-[14px] lg:text-[20px] font-black uppercase italic text-white">Log In</p>
+                    <p class="text-[16px] lg:text-[24px] font-black uppercase italic text-white">Log In</p>
                 </div>
 
-                <div class="pb-8 lg:pb-16">
-                    <span class="neon-green text-4xl lg:text-7xl font-black">❯</span>
-                </div>
-
-                <div class="flex flex-col items-center">
-                    <div class="mb-5">
-                        <img src="https://img.icons8.com/ios-filled/100/00FF00/wallet.png" class="w-16 h-16 lg:w-28 lg:h-28">
-                    </div>
-                    <p class="text-[14px] lg:text-[20px] font-black uppercase italic text-center leading-tight text-white">Attract At Least<br>50 FTD</p>
-                </div>
-
-                <div class="pb-8 lg:pb-16">
-                    <span class="neon-green text-4xl lg:text-7xl font-black">❯</span>
+                <div class="pb-10 lg:pb-24">
+                    <span class="neon-green text-5xl lg:text-8xl font-black">❯</span>
                 </div>
 
                 <div class="flex flex-col items-center">
-                    <div class="mb-5">
-                        <img src="https://img.icons8.com/ios-filled/100/00FF00/gift.png" class="w-16 h-16 lg:w-28 lg:h-28">
+                    <div class="mb-6">
+                        <img src="https://img.icons8.com/ios-filled/100/00FF00/wallet.png" class="w-20 h-20 lg:w-40 lg:h-40">
                     </div>
-                    <p class="text-[14px] lg:text-[20px] font-black uppercase italic text-center leading-tight text-white">Each FTD Must Make<br>Deposit of At Least $2</p>
+                    <p class="text-[16px] lg:text-[24px] font-black uppercase italic text-center leading-tight text-white">Attract At Least<br>50 FTD</p>
+                </div>
+
+                <div class="pb-10 lg:pb-24">
+                    <span class="neon-green text-5xl lg:text-8xl font-black">❯</span>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="mb-6">
+                        <img src="https://img.icons8.com/ios-filled/100/00FF00/gift.png" class="w-20 h-20 lg:w-40 lg:h-40">
+                    </div>
+                    <p class="text-[16px] lg:text-[24px] font-black uppercase italic text-center leading-tight text-white">Each FTD Must Make<br>Deposit of At Least $2</p>
                 </div>
             </div>
         </div>
@@ -321,14 +321,14 @@
         </h3>
 
         <div class="overflow-x-auto w-full pb-6">
-            <div class="flex flex-col gap-3 min-w-[800px]">
+            <div class="flex flex-col gap-3 w-full lg:min-w-[800px]">
                 <!-- Header Row -->
-                <div class="table-header-pill rounded-full flex items-stretch text-[18px] lg:text-[20px] font-black italic text-center uppercase tracking-wider divide-x divide-black border border-black text-white">
-                    <div class="w-[10%] py-4 flex items-center justify-center">Rank</div>
-                    <div class="w-[25%] py-4 flex items-center justify-center">Affiliate ID</div>
-                    <div class="w-[25%] py-4 flex items-center justify-center">Country</div>
-                    <div class="w-[15%] py-4 flex items-center justify-center">FTDs</div>
-                    <div class="w-[25%] py-4 flex items-center justify-center">Total Deposits($)</div>
+                <div class="table-header-pill rounded-full flex items-stretch text-[10px] md:text-[18px] lg:text-[20px] font-black italic text-center uppercase tracking-wider divide-x divide-black border border-black text-white">
+                    <div class="w-[12%] py-2 md:py-4 flex items-center justify-center">Rank</div>
+                    <div class="w-[28%] py-2 md:py-4 flex items-center justify-center">ID</div>
+                    <div class="w-[25%] py-2 md:py-4 flex items-center justify-center">Country</div>
+                    <div class="w-[12%] py-2 md:py-4 flex items-center justify-center">FTDs</div>
+                    <div class="w-[23%] py-2 md:py-4 flex items-center justify-center">Deposits</div>
                 </div>
 
                 <!-- Data Rows Container -->
@@ -441,13 +441,13 @@
         data.forEach((item, index) => {
             const row = document.createElement('div');
             const rowClass = (index % 2 === 0) ? 'table-row-pill-1' : 'table-row-pill-2';
-            row.className = `${rowClass} rounded-full flex items-stretch text-[18px] lg:text-[24px] italic font-black text-center divide-x divide-black border border-black`;
+            row.className = `${rowClass} rounded-full flex items-stretch text-[10px] md:text-[18px] lg:text-[24px] italic font-black text-center divide-x divide-black border border-black`;
             row.innerHTML = `
-                <div class="w-[10%] text-white flex items-center justify-center py-3">${item.rank}</div>
-                <div class="w-[25%] text-white flex items-center justify-center py-3">${item.id}</div>
-                <div class="w-[25%] text-white flex items-center justify-center py-3">${item.country}</div>
-                <div class="w-[15%] text-white flex items-center justify-center py-3">${item.ftds}</div>
-                <div class="w-[25%] text-white flex items-center justify-center py-3">${item.deposits}</div>
+                <div class="w-[12%] text-white flex items-center justify-center py-2 md:py-3">${item.rank}</div>
+                <div class="w-[28%] text-white flex items-center justify-center py-2 md:py-3">${item.id}</div>
+                <div class="w-[25%] text-white flex items-center justify-center py-2 md:py-3">${item.country}</div>
+                <div class="w-[12%] text-white flex items-center justify-center py-2 md:py-3">${item.ftds}</div>
+                <div class="w-[23%] text-white flex items-center justify-center py-2 md:py-3">${item.deposits}</div>
             `;
             container.appendChild(row);
         });
