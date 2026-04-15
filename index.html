@@ -253,69 +253,70 @@
     <!-- HERO SECTION -->
     <div class="hero-container">
 
-        <!-- Right Side: The Girl Image (Moved up for mobile order) -->
+        <!-- 1. The Girl Image (Top) -->
         <div class="hero-image-side">
             <img src="images/girl.png" class="girl-img" alt="FanSport Girl">
         </div>
 
-        <!-- Left Side: Text and Content -->
+        <!-- 2. JOIN & RULES Buttons (Right after girl) -->
+        <div class="flex flex-col items-center mt-4 lg:mt-8 gap-6 z-30">
+            <a href="https://fanpartners.bet" target="_blank" class="join-btn text-black text-4xl lg:text-5xl font-black py-5 px-16 lg:px-24 rounded-full italic tracking-tighter shadow-2xl inline-block text-center transform hover:scale-105 transition-transform">
+                JOIN
+            </a>
+            <button onclick="toggleModal(true)" class="text-white font-black tracking-widest hover:underline italic text-xl lg:text-3xl uppercase">RULES</button>
+        </div>
+
+        <!-- Content Stack -->
         <div class="hero-text-side">
-            <div class="mb-8 lg:mb-12 mt-8 lg:mt-0">
-                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black neon-green glow-text italic tracking-tighter leading-none uppercase">
+            <!-- 3. $5000 PRIZE FUND -->
+            <!-- 4. THE RACE OF AFFILIATIONS -->
+            <div class="mb-12 lg:mb-20 mt-12 lg:mt-16">
+                <h2 class="text-5xl md:text-6xl lg:text-8xl font-black neon-green glow-text italic tracking-tighter leading-none uppercase">
                     $5,000 PRIZE FUND!
                 </h2>
-                <p class="text-xl md:text-2xl lg:text-3xl font-black tracking-normal mt-2 italic uppercase text-white">
+                <p class="text-2xl md:text-3xl lg:text-4xl font-black tracking-normal mt-4 italic uppercase text-white">
                     THE RACE OF AFFILIATIONS
                 </p>
             </div>
 
-            <!-- Steps on the Left -->
-            <div class="flex flex-row flex-wrap justify-center lg:justify-start items-end gap-6 lg:gap-12 mb-16">
+            <!-- 5. Steps (Login, Attract, Each FTD) -->
+            <div class="flex flex-row flex-wrap justify-center items-end gap-8 lg:gap-16 mb-20">
                 <div class="flex flex-col items-center">
-                    <div class="mb-4">
-                        <img src="https://img.icons8.com/ios-filled/100/00FF00/smartphone.png" class="w-14 h-14 lg:w-20 lg:h-20">
+                    <div class="mb-5">
+                        <img src="https://img.icons8.com/ios-filled/100/00FF00/smartphone.png" class="w-16 h-16 lg:w-28 lg:h-28">
                     </div>
-                    <p class="text-[12px] lg:text-[14px] font-black uppercase italic text-white">Log In</p>
+                    <p class="text-[14px] lg:text-[20px] font-black uppercase italic text-white">Log In</p>
                 </div>
 
-                <div class="pb-6 lg:pb-10">
-                    <span class="neon-green text-3xl lg:text-5xl font-black">❯</span>
-                </div>
-
-                <div class="flex flex-col items-center">
-                    <div class="mb-4">
-                        <img src="https://img.icons8.com/ios-filled/100/00FF00/wallet.png" class="w-14 h-14 lg:w-20 lg:h-20">
-                    </div>
-                    <p class="text-[12px] lg:text-[14px] font-black uppercase italic text-center leading-tight text-white">Attract At Least<br>50 FTD</p>
-                </div>
-
-                <div class="pb-6 lg:pb-10">
-                    <span class="neon-green text-3xl lg:text-5xl font-black">❯</span>
+                <div class="pb-8 lg:pb-16">
+                    <span class="neon-green text-4xl lg:text-7xl font-black">❯</span>
                 </div>
 
                 <div class="flex flex-col items-center">
-                    <div class="mb-4">
-                        <img src="https://img.icons8.com/ios-filled/100/00FF00/gift.png" class="w-14 h-14 lg:w-20 lg:h-20">
+                    <div class="mb-5">
+                        <img src="https://img.icons8.com/ios-filled/100/00FF00/wallet.png" class="w-16 h-16 lg:w-28 lg:h-28">
                     </div>
-                    <p class="text-[12px] lg:text-[14px] font-black uppercase italic text-center leading-tight text-white">Each FTD Must Make<br>Deposit of At Least $2</p>
+                    <p class="text-[14px] lg:text-[20px] font-black uppercase italic text-center leading-tight text-white">Attract At Least<br>50 FTD</p>
                 </div>
-            </div>
 
-            <!-- JOIN & RULES -->
-            <div class="flex flex-col items-center">
-                <a href="https://fanpartners.bet" target="_blank" class="join-btn text-black text-3xl lg:text-4xl font-black py-4 px-12 lg:px-16 rounded-full italic tracking-tighter shadow-xl inline-block text-center transform hover:scale-105 transition-transform">
-                    JOIN
-                </a>
-                <button onclick="toggleModal(true)" class="text-white font-black mt-4 tracking-widest hover:underline italic text-lg lg:text-xl uppercase">RULES</button>
+                <div class="pb-8 lg:pb-16">
+                    <span class="neon-green text-4xl lg:text-7xl font-black">❯</span>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="mb-5">
+                        <img src="https://img.icons8.com/ios-filled/100/00FF00/gift.png" class="w-16 h-16 lg:w-28 lg:h-28">
+                    </div>
+                    <p class="text-[14px] lg:text-[20px] font-black uppercase italic text-center leading-tight text-white">Each FTD Must Make<br>Deposit of At Least $2</p>
+                </div>
             </div>
         </div>
-
-        <!-- Right Side: The Girl Image -->
     </div>
 
     <!-- LEADERBOARD SECTION -->
-    <section class="w-full max-w-6xl px-4 py-12 z-10 lg:mt-16">
-        <h3 class="text-center text-3xl lg:text-4xl font-black mb-16 italic tracking-tighter uppercase text-white">
+    <section class="w-full max-w-6xl px-4 py-12 z-10 lg:mt-24">
+        <!-- 6. AFFILIATE RACE Title -->
+        <h3 class="text-center text-3xl md:text-4xl lg:text-6xl font-black mb-16 italic tracking-tighter uppercase text-white">
             AFFILIATE RACE - $5,000 PRIZE POOL!
         </h3>
 
