@@ -231,9 +231,6 @@
             padding: 4px 12px;
             border-radius: 6px;
             font-size: 14px;
-            position: absolute;
-            top: 20px;
-            right: 20px;
             z-index: 100;
         }
     </style>
@@ -242,24 +239,29 @@
 
     <canvas id="particleCanvas"></canvas>
 
-    <!-- Language Switcher -->
-    <button class="lang-btn">EN ▼</button>
+    <!-- TOP NAVIGATION -->
+    <div class="fixed top-0 left-0 right-0 p-4 lg:p-8 flex justify-between items-start pointer-events-none z-[150] w-full">
+        <div class="bg-neon-green p-1 rounded-xl shadow-lg overflow-hidden pointer-events-auto">
+            <img src="images/logo.png" class="h-10 lg:h-16 w-auto block object-contain" alt="FanSport Logo">
+        </div>
+        <button class="lang-btn pointer-events-auto">EN ▼</button>
+    </div>
 
     <!-- HERO SECTION -->
     <div class="hero-container">
 
-        <!-- Left Side: Text and Logos -->
-        <div class="hero-text-side">
-            <!-- FANSPORT LOGO -->
-            <div class="bg-neon-green p-1 rounded-xl inline-flex items-center mb-16 shadow-lg overflow-hidden">
-                <img src="images/logo.png" class="h-16 w-auto block object-contain" alt="FanSport Logo">
-            </div>
+        <!-- Right Side: The Girl Image (Moved up for mobile order) -->
+        <div class="hero-image-side">
+            <img src="images/girl.png" class="girl-img" alt="FanSport Girl">
+        </div>
 
-            <div class="mb-12">
-                <h2 class="text-5xl md:text-6xl font-black neon-green glow-text italic tracking-tighter leading-none uppercase">
+        <!-- Left Side: Text and Content -->
+        <div class="hero-text-side">
+            <div class="mb-8 lg:mb-12 mt-8 lg:mt-0">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black neon-green glow-text italic tracking-tighter leading-none uppercase">
                     $5,000 PRIZE FUND!
                 </h2>
-                <p class="text-2xl md:text-3xl font-black tracking-normal mt-2 italic uppercase text-white">
+                <p class="text-xl md:text-2xl lg:text-3xl font-black tracking-normal mt-2 italic uppercase text-white">
                     THE RACE OF AFFILIATIONS
                 </p>
             </div>
@@ -306,9 +308,6 @@
         </div>
 
         <!-- Right Side: The Girl Image -->
-        <div class="hero-image-side">
-            <img src="images/girl.png" class="girl-img" alt="FanSport Girl">
-        </div>
     </div>
 
     <!-- LEADERBOARD SECTION -->
@@ -387,7 +386,7 @@
         data.forEach((item, index) => {
             const row = document.createElement('div');
             const rowClass = (index % 2 === 0) ? 'table-row-pill-1' : 'table-row-pill-2';
-            row.className = `${rowClass} rounded-full flex items-stretch text-[24px] italic font-black text-center divide-x divide-black border border-black`;
+            row.className = `${rowClass} rounded-full flex items-stretch text-[18px] lg:text-[24px] italic font-black text-center divide-x divide-black border border-black`;
             row.innerHTML = `
                 <div class="w-[10%] text-white flex items-center justify-center py-3">${item.rank}</div>
                 <div class="w-[25%] text-white flex items-center justify-center py-3">${item.id}</div>
